@@ -1,0 +1,141 @@
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    overflow: hidden;
+}
+
+* {
+    font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    margin: 80px auto 20px auto;
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    gap: 5px;
+    padding: 5px;
+}
+
+.app {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#toolbar {
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px 90px 90px;
+    margin: 10px auto 20px auto;
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.2s;
+}
+
+.icon_count {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    user-select: none;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#categories::-webkit-scrollbar {
+    display: none;
+}
+
+.categories button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.categories button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#categories {
+    overflow-x: scroll;
+    width: 280px;
+}
+
+#section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#blocks_section {
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+}
+
+#crafting_blocks {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+}
+
+#blocks_section::-webkit-scrollbar {
+    display: none;
+}
+
+.craftable {
+    opacity: 0.3;
+}
+
+.tool {
+    opacity: 0.3;
+}
+
+.active {
+    opacity: 1;
+}
+
+#inventory {
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px 90px 90px;
+    grid-template-rows: 90px 90px 90px 90px 90px 90px;
+    background-color: rgba(255, 255, 255, 0.4);
+    overflow-y: scroll;
+}
+
+#inventory::-webkit-scrollbar {
+    display: none;
+}
